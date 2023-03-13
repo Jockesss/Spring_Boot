@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit</title>
+</head>
+<body>
+
+<form action="#" th:action="@{/edit}" method="post" th:object="${edittableuser}">
+  <input type="hidden" th:field="*{id}">
+  <label>Name: </label>
+  <input type="text" th:field="*{name}"/>
+  <br/>
+  <label>Last Name: </label>
+  <input type="text" th:field="*{lastName}"/>
+  <br/>
+
+  <button type="submit">Save changes</button>
+</form>
+<br/>
+
+
+</body>
+</html>
